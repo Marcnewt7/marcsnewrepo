@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bidding App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Collectible Bidding App</h1>
+
+    <div>
+        <label>User 1 Bid:</label>
+        <input type="number" id="user1-bid" />
+        <button onclick="submitBid('User 1')">Submit Bid</button>
+    </div>
+
+    <div>
+        <label>User 2 Bid:</label>
+        <input type="number" id="user2-bid" />
+        <button onclick="submitBid('User 2')">Submit Bid</button>
+    </div>
+
+    <h2 id="highest-bidder">Highest Bidder: None</h2>
+    <button onclick="resetBids()">Reset Bids</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
